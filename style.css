@@ -114,3 +114,78 @@ main section {
     background-color:rgb(220, 220, 220);
     border-radius: 20px;
 }
+
+.containerFour{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.four{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.rowsContainer{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.one{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.two{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.threeCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.three{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.fourCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.articleRightCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.oneAR{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.twoAR{
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
