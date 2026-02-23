@@ -9,6 +9,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 header{
     background-color: rgb(170, 255, 255);
@@ -16,9 +17,9 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px;
     border-radius: 10px;
     padding: 10px;
+    margin: 10px;
 }
 
 .logo{
@@ -29,19 +30,23 @@ header{
 .app {
     flex: 1;
     display: flex;
+    min-height: 0;  
 }
 
 .panel{
     background-color: rgb(206, 255, 255);
     width: 250px;
     padding: 20px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    overflow-y: auto;
 }
 
 .panel ul{
     list-style: none;
     padding: 0;
+    max-height: 100%;
 }
 
 .panel li{
@@ -64,7 +69,7 @@ header{
 main {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -180,12 +185,92 @@ main section {
     gap: 20px;
 }
 
-.oneAR{
-    background-color:rgb(220, 220, 220);
+
+.articleLeftCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.landingPageCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.landingPageCont .one{
+    grid-column: 1 / 3;   /* span both columns */
+}
+
+.mediumGirdCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.smallGridCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.largeGridCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dashboardLayCont{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer"
+    ;
+}
+.dashboardLayCont .header{
+    grid-area: header;
+    background: rgb(220,220,220);
     border-radius: 20px;
 }
 
-.twoAR{
-    background-color:rgb(220, 220, 220);
+.dashboardLayCont .sidebar{
+    grid-area: sidebar;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayCont .main{
+    grid-area: main;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayCont .aside{
+    grid-area: aside;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayCont .footer{
+    grid-area: footer;
+    background: rgb(220,220,220);
     border-radius: 20px;
 }
