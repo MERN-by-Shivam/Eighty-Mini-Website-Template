@@ -274,3 +274,41 @@ main section {
     background: rgb(220,220,220);
     border-radius: 20px;
 }
+
+.dashboardLayContTwo{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+.dashboardLayContTwo .headerTwo{
+    grid-area: header;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayContTwo .mainTwo{
+    grid-area: main;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayContTwo .asideTwo{
+    grid-area: aside;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
+
+.dashboardLayContTwo .footerTwo{
+    grid-area: footer;
+    background: rgb(220,220,220);
+    border-radius: 20px;
+}
