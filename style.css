@@ -79,7 +79,7 @@ main section {
 .containerOne{
     height: 80%;
     width: 80%;
-    background-color: aqua;
+    background-color: rgb(220, 220, 220);
     border-radius: 20px;
 }
 
@@ -93,10 +93,24 @@ main section {
 }
 
 .left{
-    background-color: aqua;
+    background-color:rgb(220, 220, 220);
     border-radius: 20px;
 }
 .right{
-    background-color: aquamarine;
+    background-color:rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.containerThree{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.middle{
+    background-color:rgb(220, 220, 220);
     border-radius: 20px;
 }
