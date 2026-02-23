@@ -20,15 +20,26 @@
       >
     </header>
     <div class="app">
-        <aside class="panel">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </aside>
-        <main></main>
+      <aside class="panel">
+        <ul>
+          <li onclick="showContent('basicOne')">Basic</li>
+          <li onclick="showContent('twoColumn')">Two Column</li>
+        </ul>
+      </aside>
+      <main>
+        <section id="basicOne">
+          <div class="containerOne"></div>
+        </section>
+
+        <section id="twoColumn">
+          <div class="containerTwo">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </section>
+      </main>
     </div>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
